@@ -12,3 +12,6 @@ else
         echo "Xcode Command Line Tools installation skipped."
     fi
 fi
+
+
+echo "Please restart terminal and execute 2_homebrew.sh"
