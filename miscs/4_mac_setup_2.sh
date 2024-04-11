@@ -17,3 +17,4 @@ brew install zsh-syntax-highlighting
 
 # Add to ~.zshrc after execution: source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 brew install zsh-autosuggestions
+
