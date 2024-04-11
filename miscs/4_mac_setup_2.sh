@@ -12,13 +12,6 @@ if [[ $(echo $ZSH) == "" ]]; then
     cat ~/.zshrc.pre-oh-my-zsh >> ~/.zshrc
 fi
 
-
-# Pipenv setup
-# https://pipenv.pypa.io/en/latest/
-# pipenv installation
-pip install --upgrade pip
-pip install pipenv
-
 # Add to ~.zshrc after execution: source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 brew install zsh-syntax-highlighting
 
