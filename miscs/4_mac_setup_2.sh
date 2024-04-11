@@ -10,10 +10,14 @@ if [[ $(echo $ZSH) == "" ]]; then
     echo "" >> ~/.zshrc
     echo "# ~/.zshrc.pre-oh-my-zsh content" >> ~/.zshrc
     cat ~/.zshrc.pre-oh-my-zsh >> ~/.zshrc
+
+    brew install zsh-syntax-highlighting
+
+    brew install zsh-autosuggestions
+
+    echo "" >> ~/.zshrc
+    echo "source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+    echo "source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+
 fi
 
-# Add to ~.zshrc after execution: source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-brew install zsh-syntax-highlighting
-
-# Add to ~.zshrc after execution: source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-brew install zsh-autosuggestions
