@@ -39,17 +39,13 @@ fi
 
 
 # pyenv-python installation
-PYTHON_VERSION=$(python -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')
-if [[ $PYTHON_VERSION -lt "3.8" ]]; then
-    echo "Installing python"
-    pyenv install 3.10.13
+echo "Installing python"
+pyenv install 3.12.2
+pyenv install 3.11.8
+pyenv install 3.10.14
 
-    echo "Installing python"
-    pyenv install 3.11.8
-
-    echo "Set pyenv global python version"
-    pyenv global 3.11.8
-fi
+echo "Set pyenv global python version"
+pyenv global 3.11.8
 
 
 # Docker installation
