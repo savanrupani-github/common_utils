@@ -1,21 +1,10 @@
 #!/bin/zsh
 
-# Homebrew installation
-# https://brew.sh
-if [[ $(command -v brew) == "" ]]; then
-    echo "Installing Hombrew"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-else
-    echo "Updating Homebrew"
-    brew update
+echo "Updating Homebrew"
+brew update
 
-    echo "Upgrading Homebrew"
-    brew upgrade
-fi
-
-# - Run these two commands in your terminal to add Homebrew to your PATH:
-# (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/srupani-nmd/.zprofile
-# eval "$(/opt/homebrew/bin/brew shellenv)"
+echo "Upgrading Homebrew"
+brew upgrade
 
 # pyenv installation
 # https://github.com/pyenv/pyenv
@@ -43,9 +32,6 @@ echo "Installing python"
 pyenv install 3.12.2
 pyenv install 3.11.8
 pyenv install 3.10.14
-
-echo "Set pyenv global python version"
-pyenv global 3.11.8
 
 
 # Docker installation
@@ -79,4 +65,4 @@ if [[ $(command -v jq) == "" ]]; then
     brew install jq
 fi
 
-echo "Please restart terminal and execute mac-steup-2.sh"
+echo "Please restart terminal and execute 4_mac_setup_2.sh"
