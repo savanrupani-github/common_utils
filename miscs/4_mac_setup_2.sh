@@ -15,9 +15,11 @@ if [[ $(echo $ZSH) == "" ]]; then
 
     brew install zsh-autosuggestions
 
+    brew install powerlevel10k
+
     echo "" >> ~/.zshrc
     echo "source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
     echo "source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
-
+    echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 fi
 
